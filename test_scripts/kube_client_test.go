@@ -1,8 +1,8 @@
 package test_scripts
 
 import (
-	"bitbucket.org/yellowmessenger/whatsapp-infra-provisioner/kube_cli"
 	"context"
+	"github.com/parvez0/whatsapp-provisioner/kube_cli"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"testing"
 )
