@@ -17,7 +17,7 @@ func CreateServer()  {
 	clog.Info("go server started and is listening on : 5000")
 }
 
-// HealthCheck returns a json object to
+// HealthCheck returns a json object
 func HealthCheck(writer http.ResponseWriter, request *http.Request) {
 	if method := request.Method; method != http.MethodGet{
 		writer.WriteHeader(404)
