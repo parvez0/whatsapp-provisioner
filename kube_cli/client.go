@@ -34,7 +34,7 @@ func CreateClient(context string) *KubeClientSet {
 			kubeconfig = filepath.Join(home, ".kube", "config")
 		}
 		// taking the config path from environment variable
-		if path := os.Getenv("CONFIG_PATH"); path != ""{
+		if path := os.Getenv("CONFIG_PATH"); path != "" {
 			kubeconfig = path
 		}
 		// creating non interactive kube context from given cluster name
