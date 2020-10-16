@@ -2,7 +2,7 @@ package test_scripts
 
 import (
 	"context"
-	"github.com/parvez0/whatsapp-provisioner/kube_cli"
+	kube_cli "github.com/parvez0/kube-api/kube"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"testing"
 )
