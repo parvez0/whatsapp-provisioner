@@ -4,8 +4,8 @@ go 1.15
 
 require (
 	github.com/mattn/go-sqlite3 v1.14.3
-	github.com/parvez0/go-requests v0.0.0-20200908102224-93e056efc4f3 // indirect
+	github.com/parvez0/go-requests v0.0.0-20200908102224-93e056efc4f3
+	github.com/parvez0/kube-api v0.0.0-20201015080527-3ba9b2461edc
 	github.com/sirupsen/logrus v1.6.0
 	k8s.io/apimachinery v0.19.1
-	k8s.io/client-go v0.19.1
 )

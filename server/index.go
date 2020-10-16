@@ -3,6 +3,7 @@ package server
 import (
 	"encoding/json"
 	"github.com/parvez0/whatsapp-provisioner/custom_logger"
+	"github.com/parvez0/whatsapp-provisioner/objects"
 	"net/http"
 )
 
@@ -24,7 +25,7 @@ func HealthCheck(writer http.ResponseWriter, request *http.Request) {
 		writer.Write([]byte("resource not found"))
 		return
 	}
-	resp := GenericResponse{
+	resp := objects.GenericResponse{
 		Success: true,
 		Message: "Happy GO",
 		Data: map[string]string{"message": "Go server is working and ready to accept connections"},

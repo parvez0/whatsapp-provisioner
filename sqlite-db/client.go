@@ -17,7 +17,7 @@ type SQLDB struct {
 // initialize global logger
 var clog = custom_logger.NewLogger()
 
-// CreateDbConnection initializes the sqlite and
+// CreateDbConnection initializes the sqlite
 func CreateDbConnection() *SQLDB {
 	dbpath := "/data"
 	if path := os.Getenv("SQLITE_DB_PATH"); path != ""{
